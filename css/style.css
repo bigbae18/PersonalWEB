@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.Play {
+    font-family:'Play',sans-serif;
+}
+.B612 {
+    font-family: 'B612 Mono', monospace;
+}
+
+.permanentMarker {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.Rubik {
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+#fondo {
+    background: linear-gradient(180deg, #000000, #000,#111, #222, #333, #333);
+    background-size: cover;
+    transition: 0.5s;
+    grid-template-rows: 10vh 100vh 60vh 17vh;
+}
+
+.cabecera {
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    opacity: 0.88;
+    background-color: #000;
+    top: 0px;
+}
+
+.navegacion {
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 3vw;
+    text-align: center;
+}
+
+a {
+    font-size: 0.9em;
+    padding: 0.2vw;
+    transition: all 0.5s ease-in-out;
+}
+
+.enlaces {
+    color: #777;
+}
+
+.enlaces:hover {
+    transform: scale(1.02);
+    transform-origin: center;
+    color: white;
+    border-bottom: 0.5px solid;
+    border-color: red;
+}
+
+.this {
+    font-size: 1em;
+    color: red;
+    font-weight: bold;
+}
+
+.barraDeEscribir {
+    animation-name: barraDeEscribir;
+    -webkit-animation-name: barraDeEscribir;
+    animation-duration: 1.2s;
+    transition: 1.2s;
+    -webkit-animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    color:red;
+}
+
+@-webkit-keyframes barraDeEscribir {
+    from {
+        opacity:0;
+    }
+
+    65% {
+        opacity:1;
+    }
+
+    to {
+        opacity:0;
+    }
+}
+
+@keyframes barraDeEscribir {
+    from {
+        opacity:0;
+    }
+
+    65% {
+        opacity:1;
+    }
+
+    to {
+        opacity:0;
+    }
+}
+
+.contenedor-principal {
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+}
+
+.portada {
+    width:50%;
+    height:50%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1vh;
+}
+
+.portada h2 {
+    text-align: left;
+    font-size:1.5em;
+    align-self: flex-end;
+}
+
+.portada h1 {
+    font-size: 5.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.portada p {
+    text-align: right;
+    font-size:1.3em;
+    border-bottom: 1px solid red;
+    align-self: flex-start;
+    justify-self:flex-end;
+}
+
+.portada span {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.contenedor-bajo {
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.caja-texto {
+    grid-template-rows: repeat(4, 1fr);
+    padding: 2vh 2vw;
+    width: 50%;
+    grid-gap: 2vh;
+    text-align: center;
+}
+
+.caja-texto h3 {
+    font-size: 1.3em;
+}
+
+.caja-texto p {
+    font-size: 0.9em;
+}
+
+.caja-texto span {
+    margin-top: 2.5vh;
+    align-items:center;
+    justify-content:center;
+    transition:1s;
+}
+
+.contenedor-bajo:hover .caja-texto span {
+    transform: scale(1.05);
+    transform-origin: center;
+}
+
+.boton-contacto {
+    font-size: 1.4em;
+    padding: 1vh;
+    border: 2px solid white;
+    border-radius: 20%;
+}
+
+.boton-contacto:hover {
+    background-color:white;
+    color: black;
+    border: 3px solid red;
+}
+
+.parentesis {
+    margin-top: 4vh;
+    font-size: 0.5em;
+}
+
+.footer {
+    justify-content: center;
+    align-items:center;
+    background-color:#CCCCCC;
+    opacity:0.65;
+    padding:0.5vw;
+}
+.contenedor-footer {
+    grid-template-rows: 1fr 0.5fr;
+    align-items:center;
+    justify-content:center;
+}
+.contenedor-footer h4 {
+    font-size: 0.9em;
+    color:#000;
+}
+.contenedor-rrss {
+    justify-content:space-around;
+    padding-bottom:0.5vw;
+    align-items:center;
+    text-align:center;
+}
+.contenedor-rrss a:hover i {
+    transform: scale(1.1);
+    transform-origin:center;
+}
+.rrss {
+    font-size:2.2em;
+    transition:1.5s;
+}
+.color-lin {
+    background-color:#0077b5;
+    padding:5px;
+    background-clip:text;
+    border-radius:15%;
+    color:white;
+}
+.color-git {
+    background-color:black;
+    padding:5px;
+    background-clip:text;
+    border-radius:15%;
+    color:white;
+}
+.color-ig {
+    background: linear-gradient(180deg, #515BD5, #8134AF, #DD2A7B, #F58529, #FEDA77);
+    padding:5px;
+    background-clip: text;
+    color:white;
+    border-radius:15%;
+}

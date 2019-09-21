@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.B612 {
+    font-family: 'B612 Mono', monospace;
+}
+
+.permanentMarker {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.Rubik {
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+#fondo {
+    background: linear-gradient(180deg, #000000, #000,#111, #222, #333, #333);
+    background-size: cover;
+    transition: 0.5s;
+    grid-template-rows: 10vh 100vh 60vh 17vh;
+}
+
+.cabecera {
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    opacity: 0.88;
+    background-color: #000;
+    top: 0px;
+}
+
+.navegacion {
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 3vw;
+    text-align: center;
+}
+
+a {
+    font-size: 0.9em;
+    padding: 0.2vw;
+    transition: all 0.5s ease-in-out;
+}
+
+.enlaces {
+    color: #777;
+}
+
+.enlaces:hover {
+    transform: scale(1.02);
+    transform-origin: center;
+    color: white;
+    border-bottom: 0.5px solid;
+    border-color: red;
+}
+
+.this {
+    font-size: 1em;
+    color: red;
+    font-weight: bold;
+}
+.contenedor-principal {
+    justify-content: center;
+    align-items:center;
+    padding:5vh;
+}
+.portada {
+    grid-template-rows: repeat(2, 1fr);
+}

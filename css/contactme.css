@@ -1,0 +1,42 @@
+* {
+    margin:0;
+    padding:0;
+    font-size:1em;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    border: none;
+    font-style:none;
+    text-decoration:none;
+    background-color:white;
+}
+
+div {
+    margin:2em;
+}
+span {
+    animation-name: cambiarColor;
+    -webkit-animation-name: cambiarColor;
+    animation-duration: 1.2s;
+    -webkit-animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    font-size: 1.5em;
+    margin-left: 1vh;
+}
+p {
+    color: red;
+    font-family:'B612 Mono',monospace;
+    font-size: 3em;
+}
+
+@-webkit-keyframes cambiarColor {
+    0% { color:black;}
+    50% { color:red;}
+    100% { color:black;}
+}
+@keyframes cambiarColor {
+    0% { color:white;}
+    50% { color:red;}
+    100% { color:white;}
+}
+
