@@ -17,6 +17,9 @@
     display: flex;
 }
 
+.Play {
+    font-family:'Play',sans-serif;
+}
 .B612 {
     font-family: 'B612 Mono', monospace;
 }
@@ -80,5 +83,11 @@ a {
     padding:5vh;
 }
 .portada {
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr) 50vh;
+}
+.portada h2 {
+    font-size: 1.3em;
+}
+.portada h1 {
+    font-size:2em;
 }
