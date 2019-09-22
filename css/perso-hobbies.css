@@ -17,8 +17,8 @@
     display: flex;
 }
 
-.Play {
-    font-family:'Play',sans-serif;
+.Major {
+    font-family:'Major Mono Display',monospace;
 }
 .B612 {
     font-family: 'B612 Mono', monospace;
@@ -28,9 +28,7 @@
     font-family: 'Permanent Marker', cursive;
 }
 
-.Rubik {
-    font-family: 'Rubik Mono One', sans-serif;
-}
+
 
 #fondo {
     background: linear-gradient(180deg, #000000, #000,#111, #222, #333, #333);
@@ -89,5 +87,5 @@ a {
     font-size: 1.3em;
 }
 .portada h1 {
-    font-size:2em;
+    font-size:2.3em;
 }

@@ -124,10 +124,17 @@ a {
     justify-content: center;
     align-items: center;
     margin:4vw;
+    position:relative;
+}
+.contenedor-principal img {
+    width:90%;
+    height:100%;
+    opacity:0.2;
 }
 
 .portada {
     width:60%;
+    position:absolute;
     height:50%;
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 1vh;
