@@ -48,6 +48,7 @@
     opacity: 0.88;
     background-color: #000;
     top: 0px;
+    z-index:999;
 }
 
 .navegacion {
@@ -127,8 +128,8 @@ a {
     position:relative;
 }
 .contenedor-principal img {
-    width:90%;
-    height:100%;
+    width:100%;
+    height:auto;
     opacity:0.2;
 }
 
@@ -154,7 +155,7 @@ a {
 .portada p {
     text-align: right;
     font-size:1.3em;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #FA8072;
     align-self: flex-start;
     justify-self:flex-end;
 }
