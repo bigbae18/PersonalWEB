@@ -1,3 +1,8 @@
+/*
+* CSS Responsive - Móvil + Tablet
+*/
+@import url(media-queries.css);
+
 * {
     margin: 0;
     padding: 0;
@@ -195,7 +200,7 @@ a {
     transition:1s;
 }
 
-.contenedor-bajo:hover .caja-texto span {
+.contenedor-bajo .caja-texto:hover span {
     transform: scale(1.05);
     transform-origin: center;
 }

@@ -1,0 +1,10 @@
+/*
+- Queries 4 responsive.
+*/
+@media only screen and (max-width:810px)
+{
+    .contenedor-principal img {
+        display: none; 
+    }
+}
+

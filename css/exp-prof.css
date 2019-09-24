@@ -1,3 +1,8 @@
+/*
+* CSS Responsive - Móvil + Tablet
+*/
+@import url(media-queries.css);
+
 * {
     margin: 0;
     padding: 0;
