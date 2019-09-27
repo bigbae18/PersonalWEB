@@ -1,0 +1,16 @@
+[data-localTheme= 'dark'] {
+    --bg-gradient: linear-gradient(180deg, #000, #000,#111, #222, #333, #333);
+    --header-bg: #000;
+    --header-text-color:#777;
+    --anchor-hover:red;
+    --anchor-text-hover: #fff;
+    --actual-page:red;
+    /* - Header - */
+}
+
+[data-localTheme= 'light'] {}
+
+[data-sessionTheme= 'red'] {}
+[data-sessionTheme= 'blue'] {}
+[data-sessionTheme= 'purple'] {}
+[data-sessionTheme= 'green'] {}

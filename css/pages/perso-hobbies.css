@@ -1,0 +1,24 @@
+/*
+* CSS Responsive - Móvil + Tablet
+*/
+@import url(../main.css);
+@import url(../media-queries.css);
+@import url(../themes.css);
+
+.wrapper {
+    grid-template-rows: 10vh 100vh 60vh 17vh;
+}
+.contenedor-principal {
+    justify-content: center;
+    align-items:center;
+    padding:5vh;
+}
+.portada {
+    grid-template-rows: repeat(2, 1fr) 50vh;
+}
+.portada h2 {
+    font-size: 1.3em;
+}
+.portada h1 {
+    font-size:2.3em;
+}

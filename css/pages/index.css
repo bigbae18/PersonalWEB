@@ -1,90 +1,12 @@
 /*
 * CSS Responsive - Móvil + Tablet
 */
-@import url(media-queries.css);
+@import url(../main.css);
+@import url(../media-queries.css);
+@import url(../themes.css);
 
-* {
-    margin: 0;
-    padding: 0;
-    font-size: 1em;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    border: none;
-    color: white;
-    text-decoration: none;
-}
-
-.grid {
-    display: grid;
-}
-
-.flex {
-    display: flex;
-}
-
-.Major {
-    font-family:'Major Mono Display',monospace;
-}
-
-
-.B612 {
-    font-family: 'B612 Mono', monospace;
-}
-
-.permanentMarker {
-    font-family: 'Permanent Marker', cursive;
-}
-
-.Rubik {
-    font-family: 'Rubik Mono One', sans-serif;
-}
-
-#fondo {
-    background: linear-gradient(180deg, #000000, #000,#111, #222, #333, #333);
-    background-size: cover;
-    transition: 0.5s;
+.wrapper {
     grid-template-rows: 10vh 100vh 60vh 1fr;
-}
-
-.cabecera {
-    justify-content: space-around;
-    align-items: center;
-    position: sticky;
-    opacity: 0.88;
-    background-color: #000;
-    top: 0px;
-    z-index:999;
-}
-
-.navegacion {
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 3vw;
-    text-align: center;
-}
-
-a {
-    font-size: 0.9em;
-    margin: 1vw;
-    padding: 0.5vw;
-    transition: all 0.5s ease-in-out;
-}
-
-.enlaces {
-    color: #777;
-}
-
-.enlaces:hover {
-    transform: scale(1.02);
-    transform-origin: center;
-    color: white;
-    border-bottom: 0.5px solid;
-    border-color: red;
-}
-
-.this {
-    font-size: 1em;
-    color: red;
-    font-weight: bold;
 }
 
 .barraDeEscribir {

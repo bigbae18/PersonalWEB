@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-localTheme="dark" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,12 +12,12 @@
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=B612+Mono|Permanent+Marker|Rubik+Mono+One|Major+Mono+Display&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/pages/index.css">
     <title>¡El Payo Bestia</title>
 </head>
 
 <body>
-    <main id="fondo" class="grid">
+    <main id="fondo" class="grid wrapper">
         <header class="flex cabecera">
             <nav class="grid navegacion">
                 <a href="index.html" class="this B612">
@@ -33,6 +33,21 @@
                     Contáctame
                 </a>
             </nav>
+            <div class="grid cambiar-tema">
+                <p class="B612">Selecciona tu tema.</p>
+                <div class="flex theme-emoji">
+                    <div class="grid local-theme">
+                        <button id="btn-dark">🌑</button>
+                        <button id="btn-light">☀️</button>
+                    </div>
+                    <div class="grid session-theme">
+                        <button id="btn-red">❤️️</button>
+                        <button id="btn-blue">💙</button>
+                        <button id="btn-purple">💜</button>
+                        <button id="btn-green">💚</button>
+                    </div>
+                </div>
+            </div>
         </header>
         <div class="flex contenedor-principal">
             <img src="./assets/payobestia.jpg" alt="payoBestia">
@@ -74,6 +89,7 @@
             </div>
         </footer>
     </main>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

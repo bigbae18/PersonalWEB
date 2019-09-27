@@ -1,18 +1,9 @@
 /*
 * CSS Responsive - Móvil + Tablet
 */
-@import url(media-queries.css);
-
-* {
-    margin:0;
-    padding:0;
-    font-size:1em;
-    font-family:Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    border: none;
-    font-style:none;
-    text-decoration:none;
-}
+@import url(../main.css);
+@import url(../media-queries.css);
+@import url(../themes.css);
 
 div {
     margin:2em;
