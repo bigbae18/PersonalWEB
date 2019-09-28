@@ -8,7 +8,8 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     border: none;
-    color: white;
+    transition:0.5s;
+    color: var(--general-text-color);
     text-decoration: none;
 }
 
@@ -94,6 +95,8 @@ a {
 }
 .cambiar-tema p {
     font-size:0.7em;
+    color: var(--actual-page);
+    text-align:center;
 }
 .theme-emoji {
     justify-content:space-around;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-localTheme="dark" lang="en">
+<html data-localTheme="dark" data-colorTheme="red" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -37,14 +37,14 @@
                 <p class="B612">Selecciona tu tema.</p>
                 <div class="flex theme-emoji">
                     <div class="grid local-theme">
-                        <button id="btn-dark">🌑</button>
-                        <button id="btn-light">☀️</button>
+                        <button id="btn-dark" onclick="toggleThemeDark">🌑</button>
+                        <button id="btn-light" onclick="toggleThemeLight">☀️</button>
                     </div>
                     <div class="grid session-theme">
-                        <button id="btn-red">❤️️</button>
-                        <button id="btn-blue">💙</button>
-                        <button id="btn-purple">💜</button>
-                        <button id="btn-green">💚</button>
+                        <button id="btn-red" onclick="toggleColorThemeRed">❤️️</button>
+                        <button id="btn-blue" onclick="toggleColorThemeBlue">💙</button>
+                        <button id="btn-purple" onclick="toggleColorThemePurple">💜</button>
+                        <button id="btn-green" onclick="toggleColorThemeGreen">💚</button>
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@
             </div>
         </footer>
     </main>
-    <script src="/js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

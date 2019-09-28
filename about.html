@@ -31,6 +31,20 @@
                     Contáctame
                 </a>
             </nav>
+            <div class="grid cambiar-tema">
+                <p class="B612">Selecciona tu tema.</p>
+                <div class="flex theme-emoji">
+                    <div class="grid local-theme">
+                        <button id="btn-dark" onclick="toggleThemeDark">🌑</button>
+                        <button id="btn-light" onclick="toggleThemeLight">☀️</button>
+                    </div>
+                    <div class="grid session-theme">
+                        <button id="btn-red" onclick="toggleColorThemeRed">❤️️</button>
+                        <button id="btn-blue" onclick="toggleColorThemeBlue">💙</button>
+                        <button id="btn-purple" onclick="toggleColorThemePurple">💜</button>
+                        <button id="btn-green" onclick="toggleColorThemeGreen">💚</button>
+                    </div>
+                </div>
         </header>
         <div class="flex contenedor-principal">
             <div class="grid portada">
@@ -45,5 +59,6 @@
             </div>
         </div>
     </main>
+    <script src="js/main.js"></script>
 </body>
 </html>
