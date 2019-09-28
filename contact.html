@@ -1,23 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-localTheme="dark" data-colorTheme="red" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Mi página web personal">
     <meta name="description" content="Aquí explico sobre mi, mis hobbies, experiencias tanto personales como profesionales e incluso un apartado para que puedan contactarme">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/pages/contactme.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=B612+Mono|Gugi|Major+Mono+Display&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=B612+Mono|Gugi|Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/pages/contactme.css">
     <title>¡Soy el Payo Bestia!</title>
 </head>
 <body>
-    <div>
-    <p>
-        Hola amigos<span class="animacionBarra">|</span>
-    </p>
-    </div>
+    <main id="fondo" class="grid wrapper">
+        <header class="flex cabecera">
+            <nav class="grid navegacion">
+                <a href="index.html" class="enlaces B612">
+                    Home
+                </a>
+                <a href="hobbies.html" class="enlaces B612">
+                    ¿Quién es Adrián Pelayo?
+                </a>
+                <a href="about.html" class="enlaces B612">
+                    ¿Quién es el Payo Bestia?
+                </a>
+                <a href="contact.html" class="this B612">
+                    Contáctame
+                </a>
+            </nav>
+            <div class="grid cambiar-tema">
+                <p class="B612">Selecciona tu tema.</p>
+                <div class="flex theme-emoji">
+                    <div class="grid local-theme">
+                        <button id="btn-dark" onclick="toggleThemeDark">🌑</button>
+                        <button id="btn-light" onclick="toggleThemeLight">☀️</button>
+                    </div>
+                    <div class="grid session-theme">
+                        <button id="btn-red" onclick="toggleColorThemeRed">❤️️</button>
+                        <button id="btn-blue" onclick="toggleColorThemeBlue">💙</button>
+                        <button id="btn-purple" onclick="toggleColorThemePurple">💜</button>
+                        <button id="btn-green" onclick="toggleColorThemeGreen">💚</button>
+                    </div>
+                </div>
+        </header>
+    </main>
+    <script src="js/main.js"></script>
 </body>
 </html>

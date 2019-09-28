@@ -5,33 +5,6 @@
 @import url(../media-queries.css);
 @import url(../themes.css);
 
-div {
-    margin:2em;
+.wrapper {
+    grid-template-rows: 10vh repeat(3, 100vh) 1fr;
 }
-span {
-    animation-name: cambiarColor;
-    -webkit-animation-name: cambiarColor;
-    animation-duration: 1.2s;
-    -webkit-animation-duration: 1.2s;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    font-size: 1.5em;
-    margin-left: 1vh;
-}
-p {
-    color: red;
-    font-family:'B612 Mono',monospace;
-    font-size: 3em;
-}
-
-@-webkit-keyframes cambiarColor {
-    0% { color:black;}
-    50% { color:red;}
-    100% { color:black;}
-}
-@keyframes cambiarColor {
-    0% { color:white;}
-    50% { color:red;}
-    100% { color:white;}
-}
-

@@ -83,6 +83,7 @@ a {
 
 .this {
     font-size: 1em;
+    cursor: default;
     color: var(--actual-page);
     font-weight: bold;
 }

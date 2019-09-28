@@ -7,17 +7,35 @@
     --anchor-text-hover: #fff;
     /* - Header - */
     --opacity-img: 0.2;
+    --textbox-color: #000;
+    --button-border:#fff;
+    --bg-image: url(../../assets/fondo.png);
+    --button-bg-hover: white;
+    --button-c-hover: #000;
+    /* - 1 y 2 div - */
+    --bg-footer:#AAA;
+    --opacity-footer:0.65;
+    /* - Footer - */
 }
 
 [data-localTheme= 'light'] {
     --general-text-color:#000;
     /* - Selector General - */
-    --bg-gradient: linear-gradient(180deg, #CCC, #CCC,#BBB, #AAA, #999, #888, #888);
+    --bg-gradient: linear-gradient(180deg, #DDD, #CCC,#BBB, #AAA, #999, #888, #888);
     --header-bg: #FFF;
     --header-text-color:#AAA;
     --anchor-text-hover: #000;
     /* - Header - */
     --opacity-img: 0.5;
+    --textbox-color: #DDD;
+    --bg-image: url(../../assets/edit.png);
+    --button-border: #111;
+    --button-bg-hover: #000;
+    --button-c-hover:#FFF;
+    /* - 1 y 2 div - */
+    --bg-footer:#FFF;
+    --opacity-footer: 0.8;
+    /* - Footer - */
 }
 
 [data-colorTheme= 'red'] {
@@ -26,6 +44,9 @@
     /* - Header - */
     --barra-color:red;
     --barra-border: rgb(250,128,114);
+    /* */
+    --textbox-title: red;
+    --button-hover: red;
 }
 [data-colorTheme= 'blue'] {
     --anchor-hover:blue;
@@ -33,6 +54,9 @@
     /* - Header - */
     --barra-color: blue;
     --barra-border: rgb(114,128,250);
+    /* */
+    --textbox-title: blue;
+    --button-hover: blue;
 }
 [data-colorTheme= 'purple'] {
     --anchor-hover:purple;
@@ -40,6 +64,9 @@
     /* - Header - */
     --barra-color: purple;
     --barra-border: rgb(184, 114, 250);
+    /* */
+    --textbox-title: purple;
+    --button-hover: purple;
 }
 [data-colorTheme= 'green'] {
     --anchor-hover:limegreen;
@@ -47,4 +74,7 @@
     /* - Header - */
     --barra-color:limegreen;
     --barra-border: rgb(164, 250, 114);
+    /* */
+    --textbox-title: limegreen;
+    --button-hover: limegreen;
 }

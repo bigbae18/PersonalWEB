@@ -50,16 +50,23 @@
 
 .contenedor-principal {
     justify-content: center;
+    width:100%;
     align-items: center;
-    margin:4vw;
+    z-index:1;
     position:relative;
 }
-.contenedor-principal img {
+.contenedor-principal::before {
+    content:'';
+    position:absolute;
+    z-index:-1;
+    opacity:.5;
     width:100%;
-    height:auto;
-    opacity:var(--opacity-img);
+    height:100%;
+    background-size: cover;
+    background-origin: content-box;
+    background-image: var(--bg-image);
+    background-repeat:no-repeat;
 }
-
 .portada {
     width:60%;
     position:absolute;
@@ -75,14 +82,14 @@
 }
 
 .portada h1 {
-    font-size: 5.2em;
+    font-size: 5.5em;
     text-align: center;
 }
 
 .portada p {
     text-align: right;
     font-size:1.3em;
-    border-bottom: 1px solid var(--barra-border);
+    border-bottom: 1.5px solid var(--barra-border);
     align-self: flex-start;
     justify-self:flex-end;
 }
@@ -95,7 +102,7 @@
 .contenedor-bajo {
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: var(--textbox-color);
     opacity: 0.8;
 }
 
@@ -109,10 +116,12 @@
 
 .caja-texto h3 {
     font-size: 1.3em;
+    color:var(--textbox-title);
 }
 
 .caja-texto p {
     font-size: 0.9em;
+    font-weight: bold;
 }
 
 .caja-texto span {
@@ -130,14 +139,14 @@
 .boton-contacto {
     font-size: 1.4em;
     padding: 1vh;
-    border: 2px solid white;
+    border: 2px solid var(--button-border);
     border-radius: 20%;
 }
 
 .boton-contacto:hover {
-    background-color:white;
-    color: black;
-    border: 3px solid red;
+    background-color:var(--button-bg-hover);
+    color: var(--button-c-hover);
+    border: 3px solid var(--button-hover);
 }
 
 .parentesis {
@@ -148,8 +157,8 @@
 .footer {
     justify-content: center;
     align-items:center;
-    background-color:#CCCCCC;
-    opacity:0.65;
+    background-color:var(--bg-footer);
+    opacity:var(--opacity-footer);
     padding:0.5vw;
 }
 .contenedor-footer {
