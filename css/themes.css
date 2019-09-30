@@ -47,6 +47,7 @@
     /* */
     --textbox-title: red;
     --button-hover: red;
+    /* Primary & Secondary */
 }
 [data-colorTheme= 'blue'] {
     --anchor-hover:blue;

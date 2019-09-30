@@ -68,15 +68,15 @@
     background-repeat:no-repeat;
 }
 .portada {
-    width:60%;
     position:absolute;
-    height:50%;
+    height:60%;
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 1vh;
 }
 
 .portada h2 {
     text-align: left;
+    color: var(--textbox-title);
     font-size:1.5em;
     align-self: flex-end;
 }

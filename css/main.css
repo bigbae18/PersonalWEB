@@ -92,26 +92,31 @@ a {
 .cambiar-tema {
     grid-template-rows: repeat(2,auto);
     margin:1vw;
+    grid-gap:1vw;
     transition: all 0.5s ease-in-out;
+    align-items: center;
+    justify-content: center;
 }
 .cambiar-tema p {
     font-size:0.7em;
     color: var(--actual-page);
     text-align:center;
 }
-.theme-emoji {
-    justify-content:space-around;
-    align-content: center;
-}
+
 button {
     background:none;
 }
 .session-theme, .local-theme {
     grid-auto-columns: repeat(auto, 1fr);
     grid-auto-flow: column;
+    margin:0vw 1vw;
 }
-.theme-emoji div button{
+.theme-emoji div button {
     font-size:1.1em;
     border:none;
     color:var(--header-text-color);
+}
+.theme-emoji div button:hover {
+    transform:scale(1.4);
+    transition:1s;
 }
