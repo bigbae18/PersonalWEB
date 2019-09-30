@@ -7,3 +7,16 @@
         display: none; 
     }
 }
+
+@media only screen and (max-width:599px)
+{
+    * {
+        font-size:calc(1em + 0.05vw);
+    }
+}
+@media only screen and (max-height: 711px)
+{
+    * {
+        font-size:calc(1em + 0.25vh);
+    }
+}

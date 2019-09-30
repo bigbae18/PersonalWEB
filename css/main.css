@@ -1,14 +1,15 @@
 @import url(./themes.css);
 @import url(./media-queries.css);
 
+
 * {
     margin: 0;
     padding: 0;
-    font-size: calc(1em+0.2vw);
+    font-size: calc(1em + 0.25vh);
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     border: none;
-    transition:0.5s;
+    /* transition:0.5s; */
     color: var(--general-text-color);
     text-decoration: none;
 }
@@ -41,12 +42,12 @@
 #fondo {
     background: var(--bg-gradient);
     background-size: cover;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 
 .cabecera {
     justify-content: space-between;
-    padding:1vh 1vw 1vh 1vw;
+    padding:1vh 1vw ;
     align-items: center;
     position: sticky;
     opacity: 0.88;
@@ -63,14 +64,16 @@
 }
 
 a {
-    font-size: 0.9em;
-    margin: 1vw;
-    padding: 0.5vw;
+    font-size: 0.5em;
+    margin: 0.5vw;
     transition: all 0.5s ease-in-out;
 }
 
 .enlaces {
     color: var(--header-text-color);
+    text-align:center;
+    justify-content: center;
+    align-items:center;
 }
 
 .enlaces:hover {
@@ -82,8 +85,11 @@ a {
 }
 
 .this {
-    font-size: 1em;
+    font-size: 0.7em;
     cursor: default;
+    text-align:center;
+    justify-content: center;
+    align-items:center;
     color: var(--actual-page);
     font-weight: bold;
 }
@@ -98,7 +104,7 @@ a {
     justify-content: center;
 }
 .cambiar-tema p {
-    font-size:0.7em;
+    font-size:0.5em;
     color: var(--actual-page);
     text-align:center;
 }
@@ -112,11 +118,81 @@ button {
     margin:0vw 1vw;
 }
 .theme-emoji div button {
-    font-size:1.1em;
+    font-size:0.7em;
     border:none;
     color:var(--header-text-color);
 }
 .theme-emoji div button:hover {
     transform:scale(1.4);
     transition:1s;
+}
+
+.boton-contacto {
+    font-size: 1.1em;
+    padding: 1vh;
+    border: 2px solid var(--button-border);
+    border-radius: 20%;
+}
+
+.boton-contacto:hover {
+    background-color:var(--button-bg-hover);
+    color: var(--button-c-hover);
+    border: 3px solid var(--button-hover);
+}
+
+.parentesis {
+    margin-top: 4vh;
+    font-size: 0.4em;
+}
+
+.footer {
+    justify-content: center;
+    align-items:center;
+    background-color:var(--bg-footer);
+    opacity:var(--opacity-footer);
+}
+.contenedor-footer {
+    grid-template-rows: 1fr 0.5fr;
+    align-items:center;
+    margin:0.5vw;
+    justify-content:center;
+}
+.contenedor-footer h4 {
+    text-align:center;
+    font-size: 0.6em;
+    color:#000;
+}
+.contenedor-rrss {
+    justify-content:space-around;
+    align-items:center;
+    text-align:center;
+}
+.contenedor-rrss a:hover i {
+    transform: scale(1.1);
+    transform-origin:center;
+}
+.rrss {
+    font-size:1.7em;
+    transition:1s;
+}
+.color-lin {
+    background-color:#0077b5;
+    padding:5px;
+    background-clip:text;
+    border-radius:15%;
+    color:white;
+}
+.color-git {
+    background-color:black;
+    padding:5px;
+    background-clip:text;
+    border-radius:15%;
+    color:white;
+}
+.color-ig {
+    background: linear-gradient(180deg, #515BD5, #8134AF, #DD2A7B, #F58529, #FEDA77);
+    padding:5px;
+    background-clip: text;
+    color:white;
+    border-radius:15%;
 }
