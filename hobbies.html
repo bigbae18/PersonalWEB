@@ -8,14 +8,20 @@
         content="Aquí explico sobre mi, mis hobbies, experiencias tanto personales como profesionales e incluso un apartado para que puedan contactarme">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=B612+Mono|Permanent+Marker|Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=B612+Mono|Permanent+Marker|Major+Mono+Display&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/pages/perso-hobbies.css">
     <title>¡El Payo Bestia!</title>
 </head>
 
 <body>
     <main id="fondo" class="grid wrapper">
+        <div id="clickUp" class="button-up">
+            <i class="fas fa-chevron-up arrow-up">
+            </i>
+        </div>
         <header class="flex cabecera">
             <nav class="grid navegacion">
                 <a href="index.html" class="enlaces B612">
@@ -35,31 +41,95 @@
                 <p class="B612">Selecciona tu tema.</p>
                 <div class="flex theme-emoji">
                     <div class="grid local-theme">
-                        <button id="btn-dark" onclick="toggleThemeDark">🌑</button>
-                        <button id="btn-light" onclick="toggleThemeLight">☀️</button>
+                        <button id="btn-dark">🌑</button>
+                        <button id="btn-light">☀️</button>
                     </div>
                     <div class="grid session-theme">
-                        <button id="btn-red" onclick="toggleColorThemeRed">❤️️</button>
-                        <button id="btn-blue" onclick="toggleColorThemeBlue">💙</button>
-                        <button id="btn-purple" onclick="toggleColorThemePurple">💜</button>
-                        <button id="btn-green" onclick="toggleColorThemeGreen">💚</button>
+                        <button id="btn-red">❤️️</button>
+                        <button id="btn-blue">💙</button>
+                        <button id="btn-purple">💜</button>
+                        <button id="btn-green">💚</button>
                     </div>
                 </div>
         </header>
         <div class="flex contenedor-principal">
             <div class="grid portada">
                 <h2 class="B612">
-                    'A ver, cuéntanos quién es
+                    A ver, cuéntanos: ¿quién es
                 </h2>
                 <h1 class="Major">
-                    AdriAn pelAyo'
+                    AdriAn pelAyo<span class="B612">?</span>
                 </h1>
                 <p class="B612">
-                    Loco por la programación, el skate, los tatuajes y el baloncesto<span class="barraDeEscribir">|</span>
+                    Loco por la programación, el skate, los tatuajes y el baloncesto<span
+                        class="barraDeEscribir">|</span>
                 </p>
             </div>
         </div>
+        <div class="flex contenedor-perso">
+            <div class="grid textPersonal">
+                <h3 class="permanentMarker">
+                    ¿Cómo es Adrián Pelayo?
+                </h3>
+                <p class="B612">
+                    Soy bastante alegre y me considero sociable. No me gustan los prejuicios, soy bastante proactivo, y
+                    un amante incomprendido de la programación. Soy bastante lógico. <br />Loco por el Desarrollo, el
+                    Gaming, el Skateboard y el Basketball cómo decía antes.
+                </p>
+                <p class="B612">
+                    Desde chiquitito he crecido con un ordenador. Le tengo que dar gracias a mi hermano, ya que me ha
+                    dado y enseñado lo que son las nuevas tecnologías desde que tengo apenas 5 años.
+                </p>
+            </div>
+        </div>
+        <div class="flex contenedor-hobbies">
+            <div class="grid textHobbies">
+                <h3 class="permanentMarker">
+                    ¿Cómo pasa la Bestia el tiempo libre?
+                </h3>
+                <p class="B612">
+                    Pues la verdad, no veréis mucho más que lo ya mencionado antes, mi tiempo libre lo dedico
+                    fundamentalmente a pasar tiempo con las personas a las que quiero, y cuando tengo más tiempo del
+                    habitual, ya me gusta practicar los deportes que me apasionan.
+                </p>
+                <p class="B612">
+                    ¿Y qué más contaros? Me apasiona la programación, es algo que me hace inhibirme cuando estoy en
+                    ello.
+                </p>
+            </div>
+        </div>
+        <div class="flex contenedor-bajo">
+            <div class="grid caja-texto">
+                <h3 class="permanentMarker">Y te preguntarás... ¿Qué puedo encontrarme aquí?</h3>
+                <p class="B612">En esta página vas a conocer tanto a Adrián como a la Bestia que llevo dentro, ves a por
+                    un café, evádete del mundo y presta atención...</p>
+                <p class="Major parentesis">(también me puedes contactar rellenando el formulario de este botón)</p>
+                <span><a href="./contact.html" class="permanentMarker boton-contacto">Contact me!</a></span>
+            </div>
+        </div>
+        <footer class="flex footer">
+            <div class="grid contenedor-footer">
+                <h4 class="B612">
+                    ¡Si quieres seguirme a mi, o los proyectos que hago, usa estos enlaces!
+                </h4>
+                <div class="flex contenedor-rrss">
+                    <a target="_blank" href="https://www.linkedin.com/in/el-payo-bestia/">
+                        <i class="fab fa-linkedin-in rrss color-lin">
+                        </i>
+                    </a>
+                    <a target="_blank" href="https://www.github.com/bigbae18">
+                        <i class="rrss color-git fab fa-github">
+                        </i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/el.payobestia18">
+                        <i class="rrss color-ig fab fa-instagram">
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </footer>
     </main>
     <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -6,7 +6,7 @@
 @import url(../themes.css);
 
 .wrapper {
-    grid-template-rows: 10vh 100vh 60vh 17vh;
+    grid-template-rows: 1fr 10vh 100vh repeat(3,60vh) 17vh;
 }
 .contenedor-principal {
     justify-content: center;

@@ -2,23 +2,6 @@
 * CSS Responsive - Móvil + Tablet
 */
 @import url(../main.css);
-@import url(../media-queries.css);
-@import url(../themes.css);
-
-.wrapper {
-    grid-template-rows: 10vh 100vh 60vh 1fr;
-}
-
-.barraDeEscribir {
-    animation-name: barraDeEscribir;
-    -webkit-animation-name: barraDeEscribir;
-    animation-duration: 1s;
-    transition: 1s;
-    -webkit-animation-duration: 1s;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    color:var(--barra-color);
-}
 
 @-webkit-keyframes barraDeEscribir {
     from {
@@ -48,6 +31,20 @@
     }
 }
 
+.wrapper {
+    grid-template-rows: 10vh 100vh 60vh 1fr;
+}
+
+.barraDeEscribir {
+    animation-name: barraDeEscribir;
+    -webkit-animation-name: barraDeEscribir;
+    animation-duration: 1s;
+    transition: 1s;
+    -webkit-animation-duration: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    color: var(--barra-color);
+}
 .contenedor-principal {
     justify-content: center;
     width:100%;
@@ -96,41 +93,4 @@
 .portada span {
     font-size: 1.2em;
     font-weight: bold;
-}
-
-.contenedor-bajo {
-    justify-content: center;
-    align-items: center;
-    background-color: var(--textbox-color);
-    opacity: 0.8;
-}
-
-.caja-texto {
-    grid-template-rows: repeat(4, 1fr);
-    padding: 2vh 2vw;
-    width: 60vw;
-    grid-gap: 2vw;
-    text-align: center;
-}
-
-.caja-texto h3 {
-    font-size: 0.9em;
-    color:var(--textbox-title);
-}
-
-.caja-texto p {
-    font-size: 0.5em;
-    font-weight: bold;
-}
-
-.caja-texto span {
-    margin-top: 2vh;
-    align-items:center;
-    justify-content:center;
-    transition:1s;
-}
-
-.contenedor-bajo .caja-texto:hover span {
-    transform: scale(1.05);
-    transform-origin: center;
 }

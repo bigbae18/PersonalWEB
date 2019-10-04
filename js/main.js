@@ -8,9 +8,6 @@ const colorThemeSwitcherBlue = document.querySelector('.session-theme #btn-blue'
 const colorThemeSwitcherGreen = document.querySelector('.session-theme #btn-green');
 const colorThemeSwitcherPurple = document.querySelector('.session-theme #btn-purple');
 
-const currentTheme = localStorage.getItem('localTheme');
-const currentColorTheme = localStorage.getItem('colorTheme');
-
 //#endregion
 
 //#region funciones
@@ -38,6 +35,7 @@ const toggleColorThemePurple = (e) => {
     localStorage.setItem('colorTheme', 'purple');
     document.documentElement.setAttribute('data-colorTheme', 'purple');
 }
+
 //#endregion
 
 //#region ojeadores
@@ -53,38 +51,41 @@ colorThemeSwitcherPurple.addEventListener('click', toggleColorThemePurple);
 //#endregion
 
 //#region condiciones
+const currentTheme = localStorage.getItem('localTheme');
+const currentColorTheme = localStorage.getItem('colorTheme');
+
 if (currentTheme) {
     document.documentElement.setAttribute('data-localTheme', currentTheme);
-    if (currentTheme === 'dark') {
-        themeSwitcherDark.checked = true;
-        themeSwitcherLight.checked = false;
-    } else {
-        themeSwitcherLight.checked = true;
-        themeSwitcherDark.checked = false;
-    }
 }
 if (currentColorTheme) {
     document.documentElement.setAttribute('data-colorTheme', currentColorTheme);
-    if (currentColorTheme === 'red') {
-        colorThemeSwitcherRed.checked = true;
-        colorThemeSwitcherPurple.checked = false;
-        colorThemeSwitcherGreen.checked = false;
-        colorThemeSwitcherBlue.checked = false;
-    } else if (currentColorTheme === 'blue') {
-        colorThemeSwitcherRed.checked = false;
-        colorThemeSwitcherPurple.checked = false;
-        colorThemeSwitcherGreen.checked = false;
-        colorThemeSwitcherBlue.checked = true;
-    } else if (currentColorTheme === 'purple') {
-        colorThemeSwitcherRed.checked = false;
-        colorThemeSwitcherPurple.checked = true;
-        colorThemeSwitcherGreen.checked = false;
-        colorThemeSwitcherBlue.checked = false;
+}
+
+// Î Cambio de Tema Î 
+
+//#endregion
+
+const eventClickUp = document.querySelector('#fondo #clickUp');
+const eventBody = document.querySelector('body');
+const buttonClickUp = document.getElementById('clickUp');
+const selectorBody = document.documentElement;
+const selectorBodySafari = document.body;
+
+window.onscroll = function () { addButton() };
+
+const addButton = (e) => {
+    let scrolls = document.documentElement.scrollTop;
+    let scrollsSafari = document.body.scrollTop;
+    if (scrolls >= 250 || scrollsSafari >= 250) {
+        buttonClickUp.style.display = 'block';
     } else {
-        colorThemeSwitcherRed.checked = false;
-        colorThemeSwitcherPurple.checked = false;
-        colorThemeSwitcherGreen.checked = true;
-        colorThemeSwitcherBlue.checked = false;
+        buttonClickUp.style.display = 'none';
     }
 }
-//#endregion
+const scrollToTop = (e) => {
+    selectorBody.scrollTop = 0;
+    selectorBodySafari.scrollTop = 0;
+}
+
+eventBody.addEventListener('scroll', addButton);
+eventClickUp.addEventListener('click', scrollToTop);

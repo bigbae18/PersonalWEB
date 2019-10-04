@@ -5,6 +5,7 @@
     --header-bg: #000;
     --header-text-color:#777;
     --anchor-text-hover: #fff;
+    --bg-clickup: #DDD;
     /* - Header - */
     --opacity-img: 0.2;
     --textbox-color: #000;
@@ -16,6 +17,8 @@
     --bg-footer:#AAA;
     --opacity-footer:0.65;
     /* - Footer - */
+    --bg-cp:#000;
+    --bg-ch:#fff;
 }
 
 [data-localTheme= 'light'] {
@@ -25,6 +28,7 @@
     --header-bg: #FFF;
     --header-text-color:#AAA;
     --anchor-text-hover: #000;
+    --bg-clickup: #222;
     /* - Header - */
     --opacity-img: 0.5;
     --textbox-color: #DDD;
@@ -36,46 +40,56 @@
     --bg-footer:#FFF;
     --opacity-footer: 0.8;
     /* - Footer - */
+    --bg-cp: #FFF;
+    --bg-ch: #000;
 }
 
 [data-colorTheme= 'red'] {
     --anchor-hover:red;
     --actual-page:red;
     /* - Header - */
-    --barra-color:red;
+    --texto-portada:#880f0A;
+    --barra-color:#880f0A;
     --barra-border: rgb(250,128,114);
     /* */
-    --textbox-title: red;
-    --button-hover: red;
+    --textbox-title: #b22222;
+    --button-hover: #880f0A;
+    --hobbies-title:#880f0a;
     /* Primary & Secondary */
 }
 [data-colorTheme= 'blue'] {
     --anchor-hover:blue;
     --actual-page:blue;
     /* - Header - */
-    --barra-color: blue;
+    --texto-portada:#0080FF;
+    --barra-color: #0080FF;
     --barra-border: rgb(114,128,250);
     /* */
-    --textbox-title: blue;
-    --button-hover: blue;
+    --textbox-title: #73c2fb;
+    --button-hover: #0080FF;
+    --hobbies-title: #0080FF;
 }
 [data-colorTheme= 'purple'] {
     --anchor-hover:purple;
     --actual-page:purple;
     /* - Header - */
-    --barra-color: purple;
+    --texto-portada:#9966cb;
+    --barra-color: #9966cb;
     --barra-border: rgb(184, 114, 250);
     /* */
-    --textbox-title: purple;
-    --button-hover: purple;
+    --textbox-title: #8f00ff;
+    --button-hover: #9966cb;
+    --hobbies-title: #9966cb;
 }
 [data-colorTheme= 'green'] {
-    --anchor-hover:limegreen;
-    --actual-page:limegreen;
+    --anchor-hover:lime;
+    --actual-page:lime;
     /* - Header - */
-    --barra-color:limegreen;
-    --barra-border: rgb(164, 250, 114);
+    --texto-portada:lime;
+    --barra-color: #39FF14;
+    --barra-border:#98fb98;
     /* */
-    --textbox-title: limegreen;
-    --button-hover: limegreen;
+    --textbox-title: #98fb98;
+    --button-hover: lime;
+    --hobbies-title: #39FF14;
 }

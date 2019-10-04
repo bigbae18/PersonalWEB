@@ -6,5 +6,5 @@
 @import url(../themes.css);
 
 .wrapper {
-    grid-template-rows: 10vh repeat(3, 100vh) 1fr;
+    grid-template-rows: 1fr 10vh repeat(3, 100vh) 1fr;
 }

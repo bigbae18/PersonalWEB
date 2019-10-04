@@ -6,17 +6,26 @@
     .contenedor-principal img {
         display: none; 
     }
+    .theme-emoji div button:hover {
+        transform:scale(1.1);
+    }
+    .portada p {
+        border-bottom:none !important;
+    }
 }
 
 @media only screen and (max-width:599px)
 {
     * {
-        font-size:calc(1em + 0.05vw);
+        font-size:calc(1em + 0.05vh);
+    }
+    .theme-emoji div button:hover {
+        transform:scale(1.2);
     }
 }
 @media only screen and (max-height: 711px)
 {
     * {
-        font-size:calc(1em + 0.25vh);
+        font-size:calc(1em + 0.15vh);
     }
 }
