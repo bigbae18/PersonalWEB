@@ -6,7 +6,8 @@
 @import url(../themes.css);
 
 .wrapper {
-    grid-template-rows: 1fr 10vh 100vh repeat(3,60vh) 17vh;
+    grid-template-rows: 10vh 100vh repeat(3,60vh) 17vh;
+    position:absolute;
 }
 .contenedor-principal {
     justify-content: center;
@@ -30,10 +31,11 @@
     grid-template-rows: repeat(3, 1fr);
 }
 .portada h2 {
-    font-size: 1.3em;
+    font-size: 0.9em;
+    color:var(--texto-portada);
 }
 .portada h1 {
-    font-size:4em;
+    font-size:3em;
 }
 .portada p {
     margin-top:1vw;
@@ -42,14 +44,14 @@
     display:block;
     align-self:flex-end;
     justify-self:right;
-    font-size:1.2em;
+    font-size:0.9em;
 }
 .barraDeEscribir {
     animation-name: barraDeEscribir;
     -webkit-animation-name: barraDeEscribir;
     animation-duration: 1.2s;
     transition: 1.2s;
-    font-size: 1.5em;
+    font-size: 1.1em;
     font-weight: bold;
     -webkit-animation-duration: 1.2s;
     animation-iteration-count: infinite;
@@ -83,4 +85,82 @@
     to {
         opacity:0;
     }
+}
+.contenedor-about {
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    z-index:1;
+}
+.contenedor-about::before {
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity: .6;
+    background-color: var(--bg-cp);
+}
+.contenedor-txt {
+    width:70%;
+    justify-content: space-around;
+    align-items:center;
+    grid-gap: 3vw;
+}
+.contenedor-txt h3 {
+    font-size: 1.1em;
+    text-align:center;
+    color:var(--textbox-title);
+}
+.contenedor-txt p {
+    font-size:0.5em;
+}
+.contenedor-wrapper {
+    padding:2vw;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    border: 1.2px dashed var(--actual-page);
+    border-radius: 2em; 
+}
+.info-about {
+    width:45%;
+    grid-gap:0.3vw;
+    text-align:center;
+    grid-template-rows: repeat(auto-fill, 1fr);
+}
+.info-about i {
+    margin-bottom:0.6vw;
+    color: var(--hobbies-title);
+}
+.info-about h4 {
+    font-size: 0.6em;
+    color: var(--bg-clickup);
+}
+.info-about p {
+    text-decoration: underline;
+    text-decoration-color: var(--textbox-title);
+    font-size: 0.5em;
+}
+#parent {
+    font-size: 0.3em;
+}
+.wrapper-bg-exp .wrapper-bg-prof {
+    position:absolute;
+}
+.wrapper-bg-exp::before {
+    content:'';
+    position:relative;
+    width:100%;
+    height:100%;
+    background-color: var(--header-bg);
+    opacity:.5;
+}
+.wrapper-bg-prof::before {
+    content:'';
+    width:100%;
+    height:100%;
+    background-color:var(--header-text-color);
+    opacity:.7;
 }

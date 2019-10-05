@@ -9,7 +9,7 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     border: none;
-    /* transition:0.5s; */
+    /* transition:0.2s; */
     color: var(--general-text-color);
     text-decoration: none;
 }
@@ -153,8 +153,8 @@ a {
 }
 .caja-texto {
     grid-template-rows: repeat(4, 1fr);
-    width: 60%;
-    grid-gap: 2vw;
+    width: 40%;
+    grid-gap: 1vw;
     text-align: center;
 }
 
@@ -213,7 +213,7 @@ a {
 .contenedor-footer h4 {
     text-align:center;
     font-size: 0.6em;
-    color:#000;
+    color: var(--textbox-color);
 }
 .contenedor-rrss {
     justify-content:space-around;
