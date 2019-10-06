@@ -1,3 +1,5 @@
+//#region Cambio de Temas !!
+
 //#region variables
 
 const themeSwitcherDark = document.querySelector('.local-theme #btn-dark');
@@ -65,6 +67,8 @@ if (currentColorTheme) {
 
 //#endregion
 
+//#endregion
+//#region Botón To Top !!
 const eventClickUp = document.querySelector('#fondo #clickUp');
 const eventBody = document.querySelector('body');
 const buttonClickUp = document.getElementById('clickUp');
@@ -89,3 +93,82 @@ const scrollToTop = (e) => {
 
 eventBody.addEventListener('scroll', addButton);
 eventClickUp.addEventListener('click', scrollToTop);
+
+//#endregion
+//#region Formularios !!
+
+//#region Work In progress
+/*
+const formularioPersonal = () => {
+    const name = document.querySelector('#name').nodeValue;
+    const email = document.querySelector('#email').nodeValue;
+    const phone = document.querySelector('#phone').nodeValue;
+    const ref = document.querySelector('#ref').nodeValue;
+
+    if (name == '' || !email.contains('@') || ref == '') {
+        return false;
+    } else if (parseInt(phone)) {
+        alert(`*****************************
+        ¡Se han recogido tus datos con éxito!
+        *****************************
+        Nombre: ${name},
+        Correo: ${email},
+        Teléfono: ${phone};
+        Asunto: ${ref};
+        *****************************
+        Pronto estaremos en contacto ;)
+        *****************************
+        `)
+    } else {
+        alert(`*****************************
+        ¡Se han recogido tus datos con éxito!
+        *****************************
+        Nombre: ${name},
+        Correo: ${email},
+        Asunto: ${ref};
+        *****************************
+        Pronto estaremos en contacto ;)
+        *****************************
+        `)
+    }
+}
+
+const formularioProfesional = () => {
+    const name = document.querySelector('#name').nodeValue;
+    const email = document.querySelector('#email').nodeValue;
+    const phone = document.querySelector('#phone').nodeValue;
+    const ref = document.querySelector('#ref').nodeValue;
+
+    if (name == '' || !email.contains('@') || ref == '') {
+        console.log('OK');
+        return false;
+    } else if (parseInt(phone)) {
+        console.log('OK1.1');
+        alert(`*****************************
+        ¡Se han recogido sus datos con éxito!
+        *****************************
+        Nombre: ${name},
+        Correo: ${email},
+        Teléfono: ${phone};
+        Asunto: ${ref};
+        *****************************
+        Es un placer, pronto me pondré en contacto con ustedes. ;)
+        *****************************
+        `)
+    } else {
+        console.log('OK1.2');
+        alert(`*****************************
+        ¡Se han recogido sus datos con éxito!
+        *****************************
+        Nombre: ${name},
+        Correo: ${email},
+        Asunto: ${ref};
+        *****************************
+        Es un placer, pronto me pondré en contacto con ustedes. ;)
+        *****************************
+        `)
+    }
+}
+*/
+
+//#endregion

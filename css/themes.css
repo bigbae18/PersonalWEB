@@ -15,6 +15,8 @@
     --button-c-hover: #000;
     /* - 1 y 2 div - */
     --bg-footer:#AAA;
+    --bg-form1:#282828;
+    --bg-form2:#1d2021;
     --opacity-footer:0.65;
     /* - Footer - */
     --bg-cp:#000;
@@ -35,6 +37,8 @@
     --bg-image: url(../../assets/edit.png);
     --button-border: #111;
     --button-bg-hover: #000;
+    --bg-form1:#282828;
+    --bg-form2:#211e1d;
     --button-c-hover:#FFF;
     /* - 1 y 2 div - */
     --bg-footer:#FFF;

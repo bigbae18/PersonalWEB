@@ -32,15 +32,17 @@
 }
 .portada h2 {
     font-size: 0.9em;
-    color:var(--texto-portada);
+    align-self:flex-end;
+    color:var(--textbox-title);
 }
 .portada h1 {
+    text-align:center;
     font-size:3em;
 }
 .portada p {
     margin-top:1vw;
     border-bottom: 1.5px solid var(--barra-border);
-    text-align:center;
+    text-align:right;
     display:block;
     align-self:flex-end;
     justify-self:right;

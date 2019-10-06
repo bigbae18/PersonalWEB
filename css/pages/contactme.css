@@ -6,5 +6,108 @@
 @import url(../themes.css);
 
 .wrapper {
-    grid-template-rows: 1fr 10vh repeat(3, 100vh) 1fr;
+    grid-template-rows: 10vh repeat(3, 100vh) 60vh 1fr;
+    position:absolute;
+}
+.contenedor-principal {
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    z-index:1;
+}
+.contenedor-principal::before {
+    content:'';
+    position:absolute;
+    z-index:-1;
+    width:100%;
+    height:100%;
+    opacity:.2;
+    background-image: url(../../assets/bestiazams.png);
+    background-size:cover;
+    background-origin:border-box;
+    background-repeat:no-repeat;
+}
+.principal-txt {
+    grid-template-rows: repeat(3,1fr);
+}
+.principal-txt h2 {
+    font-size:0.8em;
+    color:var(--textbox-title);
+    align-self:flex-end;
+}
+.principal-txt h1 {
+    font-size: 1.5em;
+}
+.principal-txt p {
+    color:var(--bg-footer);
+    font-size:0.7em;
+    align-self:flex-end;
+    text-align:right;
+}
+.formulario-wrapper1 {
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    z-index:1;
+}
+.formulario-wrapper1::before {
+    content:'';
+    width: 100%;
+    height:100%;
+    position:absolute;
+    z-index:-1;
+    background-color:var(--bg-form1);
+    opacity:.4;
+}
+.formulario-grid {
+    grid-template-rows: 1fr 60%;
+    grid-gap: 2vw;
+}
+.formulario-grid h3 {
+    color: var(--hobbies-title);
+    text-align:center;
+    font-size:1.3em;
+}
+form p {
+    padding:0.2vw;
+    font-size: 0.8em;
+    text-align:center;
+}
+input {
+    color: var(--textbox-color);
+}
+.buttonForm {
+    justify-content:space-evenly;
+}
+.buttonForm input {
+    margin-top:1vh;
+    padding:1vh;
+    background:none;
+    color:var(--button-border);
+    cursor:pointer;
+    border: 1.5px solid var(--button-border);
+    font-size:0.5em;
+    transition:0.5s;
+    border-radius:0.8em;
+}
+.buttonForm input:hover {
+    transform:scale(1.05);
+    background-color:var(--button-bg-hover);
+    color: var(--button-c-hover);
+    border: 2px solid var(--button-hover);
+}
+.formulario-wrapper2 {
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    z-index:1;
+}
+.formulario-wrapper2::before {
+    content:'';
+    width: 100%;
+    height:100%;
+    position:absolute;
+    z-index:-1;
+    background-color:var(--bg-form2);
+    opacity:.7;
 }

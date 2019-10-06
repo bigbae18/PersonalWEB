@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=B612+Mono|Gugi|Major+Mono+Display&display=swap"
+    <link href="https://fonts.googleapis.com/css?family=B612+Mono|Permanent+Marker|Major+Mono+Display&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/pages/contactme.css">
     <title>¡Soy el Payo Bestia!</title>
@@ -52,6 +52,80 @@
                     </div>
                 </div>
         </header>
+        <div class="flex contenedor-principal">
+            <div class="grid principal-txt">
+                <h2 class="B612">
+                    'Si después de todo deseas contactar
+                </h2>
+                <h1 class="Major">
+                    a AdriAn pelAyo o el pAyo bestiA ..'
+                </h1>
+                <p class="B612">
+                    Rellena cualquiera de los dos formularios, dependiendo de lo que quieras
+                </p>
+            </div>
+        </div>
+        <div class="flex formulario-wrapper1">
+            <div class="grid formulario-grid">
+                <h3 class="permanentMarker">
+                    Contacto Profesional
+                </h3>
+                <form id="formProfesional" onsubmit="return formularioProfesional" action="./contact.html">
+                    <p class="B612">* Nombre: <input type="text" name="Nombre" id="name" class="B612" required></p>
+                    <p class="B612">* Correo: <input type="email" name="Correo" id="email" class="B612" required></p>
+                    <p class="B612"></p>
+                    <p class="B612">Teléfono: <input type="number" name="Telefono" id="phone" class="B612"></p>
+                    <p class="B612">* Asunto: <input type="text" name="Asunto" id="ref" class="B612" required></p>
+                    <div class="flex buttonForm"><input type="submit" value="Enviar solicitud" class="B612"><input
+                            type="reset" value="Restablecer campos" class="B612"></div>
+                </form>
+            </div>
+        </div>
+        <div class="flex formulario-wrapper2">
+            <div class="grid formulario-grid">
+                <h3 class="permanentMarker">
+                    Contacto Personal
+                </h3>
+                <form onsubmit="return formularioPersonal" action="./contact.html">
+                    <p class="B612">* Nombre: <input type="text" name="Nombre" id="name" class="B612" required></p>
+                    <p class="B612">* Correo: <input type="email" name="Correo" id="email" class="B612" required></p>
+                    <p class="B612"></p>
+                    <p class="B612">Teléfono: <input type="number" name="Telefono" id="phone" class="B612"></p>
+                    <p class="B612">* Asunto: <input type="text" name="Asunto" id="ref" class="B612" required></p>
+                    <div class="flex buttonForm"><input type="submit" value="Enviar solicitud" class="B612"><input type="reset" value="Restablecer campos" class="B612"></div>
+                </form>
+            </div>
+        </div>
+        <div class="flex contenedor-bajo">
+            <div class="grid caja-texto">
+                <h3 class="permanentMarker">¡Hey! ¿Crees que has terminado?</h3>
+                <p class="B612">No te olvides darme feedback por redes sociales... O directamente enviarme un mensaje para preguntarme sobre lo que sea.</p>
+                <p class="B612">¡estaré encantado de escucharos!</p>
+                <p class="Major parentesis">(también me puedes contactar rellenando el formulario de este botón)</p>
+                <span><a href="./contact.html" class="permanentMarker boton-contacto">Contact me!</a></span>
+            </div>
+        </div>
+        <footer class="flex footer">
+            <div class="grid contenedor-footer">
+                <h4 class="B612">
+                    ¡Si quieres seguirme a mi, o los proyectos que hago, usa estos enlaces!
+                </h4>
+                <div class="flex contenedor-rrss">
+                    <a target="_blank" href="https://www.linkedin.com/in/el-payo-bestia/">
+                        <i class="fab fa-linkedin-in rrss color-lin">
+                        </i>
+                    </a>
+                    <a target="_blank" href="https://www.github.com/bigbae18">
+                        <i class="rrss color-git fab fa-github">
+                        </i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/el.payobestia18">
+                        <i class="rrss color-ig fab fa-instagram">
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </footer>
     </main>
     <script src="js/main.js"></script>
 </body>

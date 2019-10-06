@@ -30,21 +30,18 @@
     grid-template-rows: repeat(3, 1fr);
 }
 .portada h2 {
-    display:block;
     color:var(--textbox-title);
     font-size: 1em;
     align-self:flex-end;
 }
 .portada h1 {
     font-size:3.2em;
-    display:block;
     text-align:center;
 }
 .portada p {
     margin-top:1vw;
     border-bottom: 1.5px solid var(--barra-border);
     text-align:right;
-    display:block;
     align-self:flex-end;
     justify-self:right;
     font-size:0.7em;

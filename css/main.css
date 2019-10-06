@@ -154,7 +154,7 @@ a {
 .caja-texto {
     grid-template-rows: repeat(4, 1fr);
     width: 40%;
-    grid-gap: 1vw;
+    grid-gap: 0.7vw;
     text-align: center;
 }
 
@@ -169,10 +169,10 @@ a {
 }
 
 .caja-texto span {
-    margin-top: 2vh;
     align-items:center;
     justify-content:center;
     transition:1s;
+    margin-top:2vh;
 }
 
 .contenedor-bajo .caja-texto:hover span {
@@ -194,7 +194,7 @@ a {
 }
 
 .parentesis {
-    margin-top: 4vh;
+    margin-top: 2vh;
     font-size: 0.4em;
 }
 
