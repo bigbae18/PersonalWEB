@@ -41,14 +41,14 @@
                 <p class="B612">Selecciona tu tema.</p>
                 <div class="flex theme-emoji">
                     <div class="grid local-theme">
-                        <button id="btn-dark" onclick="toggleThemeDark">🌑</button>
-                        <button id="btn-light" onclick="toggleThemeLight">☀️</button>
+                        <button id="btn-dark">🌑</button>
+                        <button id="btn-light">☀️</button>
                     </div>
                     <div class="grid session-theme">
-                        <button id="btn-red" onclick="toggleColorThemeRed">❤️️</button>
-                        <button id="btn-blue" onclick="toggleColorThemeBlue">💙</button>
-                        <button id="btn-purple" onclick="toggleColorThemePurple">💜</button>
-                        <button id="btn-green" onclick="toggleColorThemeGreen">💚</button>
+                        <button id="btn-red">❤️️</button>
+                        <button id="btn-blue">💙</button>
+                        <button id="btn-purple">💜</button>
+                        <button id="btn-green">💚</button>
                     </div>
                 </div>
         </header>
@@ -70,7 +70,7 @@
                 <h3 class="permanentMarker">
                     Contacto Profesional
                 </h3>
-                <form id="formProfesional" onsubmit="return formularioProfesional" action="./contact.html">
+                <form id="formProfesional" onsubmit="formularioProfesional" action="./contact.html" method="GET">
                     <p class="B612">* Nombre: <input type="text" name="Nombre" id="name" class="B612" required></p>
                     <p class="B612">* Correo: <input type="email" name="Correo" id="email" class="B612" required></p>
                     <p class="B612"></p>
@@ -86,7 +86,7 @@
                 <h3 class="permanentMarker">
                     Contacto Personal
                 </h3>
-                <form onsubmit="return formularioPersonal" action="./contact.html">
+                <form onsubmit="formularioPersonal" action="./contact.html" method="GET">
                     <p class="B612">* Nombre: <input type="text" name="Nombre" id="name" class="B612" required></p>
                     <p class="B612">* Correo: <input type="email" name="Correo" id="email" class="B612" required></p>
                     <p class="B612"></p>
